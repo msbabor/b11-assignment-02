@@ -26,7 +26,6 @@ body{
     color: rgb(255, 255, 255);
 }
 .btn-color2{
-    border-radius: 12px;
     background-color: rgb(17, 17, 17);
     border: none;
     color: white;
@@ -133,7 +132,7 @@ body{
 .curriculum{
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
-    width: 1440px;
+    max-width: 1440px;
     height: 879px;
     display: flex;
     flex-direction: column;
@@ -231,13 +230,17 @@ body{
 /* media query for small device */
 
 @media screen and (max-width: 576px) {
+    .navbar{
+        max-width: 500px;
+    }
     
     .nav-title{
         display: none;
         width: calc(100% - 20px);
         gap: 50px;
     }
-    .menu-container{
+    .menu-container, 
+    .secondary-btn-container{
         display: none;
     }
     #contact{
@@ -248,10 +251,76 @@ body{
     }
     .banner{
         flex-direction: column-reverse;
-        width: 357px;
+        width: 500px;
         height: 725px;
         gap: 20;
         padding: 20px 0px 20px 0px;
         margin-top: 200px;
+    }
+    .banner-container{
+        width: 437px;
+        text-align: center;
+    }
+    .image-container{
+        width: 437.58px;
+        height: 513px;
+        margin: 20px 0px;
+    }
+    .image-container > img{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .banner-description{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .btn-primary{
+        width: 131px;
+        height: 42px;
+        padding: 6px 24px 6px 24px;
+        border-radius: 8px;
+    }
+    .curriculum{
+        max-width: 500px;
+        height: 1913.51px;
+        padding: 40px 0px 40px 0px;
+    }
+    .curriculum-title{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+    .card-container{
+        max-width: 500px;
+        height: 991.61px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-box{
+        max-width: 500px;
+        height: 321.28px;
+        padding: 36px 28px 36px 28px;
+    }
+    .card-title{
+        font-size: 16.6px;
+        font-weight: 700;
+        line-height: 20.75px;
+    }
+    .card-description{
+        font-size: 10.22px;
+        font-weight: 500;
+        line-height: 19.16px;
+    }
+    .box-btn{
+        width: 80px;
+        height: 19.16px;
+        font-size: 10.22px;
+        font-weight: 700;
+        line-height: 19.16px;
     }
 }
