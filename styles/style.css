@@ -30,6 +30,27 @@ body{
     border: none;
     color: white;
 }
+.btn-position{
+    position: absolute;
+    height: 38.35px;
+    left: 38.35px;
+    top: 157.81px;
+    border-radius: 47.93px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+}
+.card-btn1{
+    background: rgb(149, 178, 38);
+}
+.card-btn2{
+    background: rgb(93, 88, 240);
+}
+.btn-width1{
+    width: 174.51px;
+}
 
 /* navigation bar style start */
 .navbar{
@@ -226,12 +247,121 @@ body{
     line-height: 24px;
 }
 
+/* stories style start */
+.stories{
+    width: 1440px;
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    text-align: center;
+    gap: 80;
+    padding: 60px 0px 60px 0px;
+}
+.story-title{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+}
+.story-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.story-card-container-1{
+    position: relative;
+    width: 540.27px;
+    height: 630.52px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.story-image{
+    width: 540px;
+    height: 337px;
+    background: rgb(217, 217, 217);
+    border-radius: 16px 16px 0px 0px;
+}
+.story-image > img{
+    border-radius: 16px 16px 0px 0px;
+}
+.about-story-card-container{
+    width: 463.57px;
+    padding: 0px 40px;
+    margin-top: 60px;
+}
+.abour-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.35px;
+    text-align: left;
+}
+.about-description{
+    color: rgb(102, 102, 102);
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    text-align: left;
+    margin-top: 36px;
+}
+.about-btn{
+    position: absolute;
+    width: 174.51px;
+    height: 47.93px;
+    left: 38.35px;
+    top: 314.14px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+}
+.story-card-container{
+    width: 601px;
+    height: 622.4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.story-card-box{
+    position: relative;
+    width: 290.69px;
+    height: 301.61px;
+    margin-left: 18px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    /* border-radius: 16px 16px 0px 0px; */
+}
+.story-card-box > img{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0px 0px;
+}
+.story-card-description{
+    width: 198.04px;
+    height: 47.93px;
+    margin-left: 40px;
+    margin-top: 42px;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    text-align: left;
+}
+#september{
+    width: 179.44px;
+}
+#july{
+    width: 127.44px;
+}
+#view{
+    margin: 80px 0px 0px 0px;
+}
+
 
 /* media query for small device */
-
 @media screen and (max-width: 576px) {
+    
     .navbar{
-        max-width: 500px;
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 0 8px;
     }
     
     .nav-title{
@@ -240,7 +370,8 @@ body{
         gap: 50px;
     }
     .menu-container, 
-    .secondary-btn-container{
+    .secondary-btn-container,
+    .story-card-container-1{
         display: none;
     }
     #contact{
@@ -251,30 +382,32 @@ body{
     }
     .banner{
         flex-direction: column-reverse;
-        width: 500px;
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 357px;
         height: 725px;
-        gap: 20;
-        padding: 20px 0px 20px 0px;
-        margin-top: 200px;
     }
     .banner-container{
-        width: 437px;
+        width: 357px;
         text-align: center;
+        align-items: center;
     }
     .image-container{
-        width: 437.58px;
-        height: 513px;
+        width: 350px;
+        height: 460px;
         margin: 20px 0px;
+        text-align: center;
     }
     .image-container > img{
         width: 100%;
     }
     .banner-title{
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 700;
         line-height: 40px;
     }
     .banner-description{
+        color: rgb(17, 17, 17);
         font-size: 14px;
         font-weight: 500;
         line-height: 18px;
@@ -286,9 +419,12 @@ body{
         border-radius: 8px;
     }
     .curriculum{
-        max-width: 500px;
-        height: 1913.51px;
+        max-width: 357px;
+        height: 1350px;
         padding: 40px 0px 40px 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .curriculum-title{
         font-size: 26px;
@@ -296,13 +432,13 @@ body{
         line-height: 33px;
     }
     .card-container{
-        max-width: 500px;
+        max-width: 390px;
         height: 991.61px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
     .card-box{
-        max-width: 500px;
+        max-width: 350px;
         height: 321.28px;
         padding: 36px 28px 36px 28px;
     }
@@ -322,5 +458,58 @@ body{
         font-size: 10.22px;
         font-weight: 700;
         line-height: 19.16px;
+    }
+    .stories{
+        width: 357px;
+        height: 768.89px;
+        padding: 0;
+        text-align: center;
+        padding: 40px 0px 40px 0px;
+    }
+    .story-title{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 57.5px;
+    }
+    .story-card-container{
+        width: 350px;
+        height: 561.39px;
+    }
+    .story-card-box{
+        width: 173.09px;
+        height: 179.59px;
+        border-radius: 9.53px;
+        margin: 0 auto;
+    }
+    .story-card-box > img{
+        width: 173.27px;
+        height: 105.39px;
+        border-radius: 9.53px 9.53px 0px 0px;
+    }
+    .story-card-description{
+        font-size: 9.13px;
+        font-weight: 700;
+        line-height: 17.12px;
+        margin-left: 10px;
+        margin-top: 16px;
+    }
+    .btn-position{
+        position: absolute;
+        height: 22.83px;
+        left: 22.83px;
+        top: 93.96px;
+        color: rgb(255, 255, 255);
+        font-size: 9.13px;
+        font-weight: 500;
+        line-height: 17.12px;
+    }
+    .btn-width1{
+        width: 103.91px;
+    }
+    #september{
+        width: 106.84px;
+    }
+    #july{
+        width: 75.88px;
     }
 }
